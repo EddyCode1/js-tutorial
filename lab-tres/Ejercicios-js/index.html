@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Ejercicios JavaScript</title>
+    
+    <style>
+        body {
+            background-color: #fcebeb; 
+            color: #333; 
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            text-align: center; 
+            min-height: 100vh; 
+            margin: 0;
+            padding-top: 50px;
+        }
+        
+        h1 {
+            color: #a00000; 
+            border-bottom: 2px solid #a00000;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .menu-list {
+            list-style: none; 
+            padding: 0;
+            width: 80%; 
+            max-width: 500px;
+        }
+
+        .menu-list li {
+            margin: 15px 0;
+        }
+
+        .menu-list a {
+            display: block; 
+            text-decoration: none;
+            background-color: #c93535; 
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-list a:hover {
+            background-color: #a00000; 
+            transform: translateY(-2px); 
+        }
+    </style>
+</head>
+<body>
+    <h1>Menú Principal de Ejercicios JS</h1>
+    
+    <ul class="menu-list">
+        <li>
+            <a href="numero-mayor.html">1. Verificación de Número Mayor</a>
+        </li>
+        <li>
+            <a href="longitud-de-texto.html">2. Longitud Mayor a 5 de una Cadena de Texto</a>
+        </li>
+        <li>
+            <a href="factorial.html">3. Factorial de un Número</a>
+        </li>
+        <li>
+            <a href="impresion-de-pares.html">4. Impresión de Números Pares del 2 al 20</a>
+        </li>
+        <li>
+            <a href="palindromo.html">5. Verificación de Textos Palíndromos</a>
+        </li>
+        <li>
+            <a href="cadena-mas-larga.html">6. Retorno de la Cadena de Texto Más Larga</a>
+        </li>
+    </ul>
+
+</body>
+</html>
