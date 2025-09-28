@@ -1,0 +1,75 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #F2F2F2, #D9BFBF);
+    background-size: 400% 400%;
+    animation: fondoAnimado 15s ease infinite;
+    min-height: 100vh;
+    margin: 0;
+    padding: 50px 20px 20px;
+    color: #400C0C;
+}
+
+@keyframes fondoAnimado {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.bienvenida {
+    text-align: center;
+    background-color: white;
+    padding: 60px 80px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(64, 12, 12, 0.15);
+    max-width: 550px;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #400C0C;
+    margin-bottom: 10px;
+}
+
+.letras {
+    font-size: 5vw; 
+    letter-spacing: 5vw; 
+    max-width: 100%;
+    line-height: 1;
+    font-weight: bold;
+    color: #591D1D;
+    margin: 20px 0 30px;
+}
+
+@media (min-width: 800px) {
+    .letras {
+        font-size: 36px;
+        letter-spacing: 12px;
+    }
+}
+
+#iniciar {
+    padding: 15px 35px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: white;
+    background-color: #400C0C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 4px #591D1D;
+    text-transform: uppercase;
+}
+
+#iniciar:hover {
+    background-color: #591D1D;
+}
+
+#iniciar:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px #591D1D;
+}
